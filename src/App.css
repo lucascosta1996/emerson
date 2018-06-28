@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 @media only screen and (max-width: 2560px) {
 nav, ul, section, .expoDescription {
   display: -webkit-box;
@@ -17,10 +19,13 @@ a{
 address {
   font-style: normal;
   font-size: 1.4em;
+  font-family: Arial;
   font-weight: bold;
   position: absolute;
+  text-align: center;
   top: 45%;
-  left: 2%;
+  left: 35%;
+  right: 35%;
 }
 
 footer {
@@ -33,11 +38,16 @@ nav {
   width: 20%;
   position: absolute;
   bottom: 25%;
-  left: 5%;
+  left: 40%;
+  right: 40%;
   height: 500px;
+  font-family: 'Roboto', sans-serif;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
 }
 
 ul {
@@ -54,8 +64,13 @@ h2 {
 }
 
 #terrestreTitle {
-  width: 100%;
+  width: 49.7%;
+  margin: auto;
   padding: 105px 0 65px 0;
+}
+
+.artistName {
+  font-family: 'Helvetica', Arial;
 }
 
 .backButton {
@@ -68,11 +83,12 @@ h2 {
   font-size: 1.3em;
 }
 
-.galleries {
-  width: 75%;
+.galleries, .infinite-scroll-component {
+  width: 55%;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 8px;
+  overflow: hidden!important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -80,25 +96,33 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          text-align: center;
 }
 
-.galleries img {
-  width: 100%;
-  margin: 10px;
+.galleries, .infinite-scroll-component img {
+  width: 90%;
+  margin: auto;
+  margin: 5px 0 5px 0;
 }
 
 .expoDescription {
-  width: 75%;
+  width: 49.7%;
   margin: auto;
   margin-top: 60px;
-  margin-bottom: 20px;
-  align-items: flex-end;
-  flex-direction: column;
+  margin-bottom: 50px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .release {
   color: #4D110D;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  font-family: Arial;
   font-weight: bold;
 }
 
@@ -112,16 +136,24 @@ h2 {
     font-size: 1.2em;
   }
 
+  address {
+    font-size: 1.2em;
+  }
+
+  #terrestreTitle {
+    font-size: 0.8em;
+  }
+
   .backButton span {
     font-size: 1em;
   }
 
-  .galleries {
-    width: 65%;
+  .galleries, .infinite-scroll-component {
+    width: 55%;
   }
 
   .expoDescription {
-    width: 65%;
+    width: 49.7%;
   }
 
   .release {
@@ -131,21 +163,23 @@ h2 {
 
  @media only screen and (min-width: 320px) and (max-width: 768px){
    nav {
-     width: 70%;
+     width: 60%;
+     left: 20%;
+     right: 20%;
      bottom: 20%;
-     left: 2%;
      height: 400px;
    }
 
    address {
      font-size: 0.9em;
+     left: 20%;
    }
 
    h2 {
-     font-size: 1em;
+     font-size: 1.3em;
    }
 
-   .galleries {
+   .galleries, .infinite-scroll-component {
      width: 100%;
    }
 
@@ -157,7 +191,11 @@ h2 {
      font-size: 0.9em;
    }
 
-   .galleries img {
+   #terrestreTitle {
+     width: 100%;
+   }
+
+   .galleries, .infinite-scroll-component img {
      width: 100%;
      margin: 2px 0 2px 0;
    }
