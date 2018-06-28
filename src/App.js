@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Terrestre from "./Terrestre";
 import Especie from "./Especie";
 import Contato from "./Contato";
-import { Link } from "react-router-dom";
-import { Route } from "react-router-dom";
+import NotFound from "./NotFound";
+import { Link, Route, Switch } from "react-router-dom";
 import "./normalize.css";
 import "./App.css";
 
@@ -11,12 +11,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Route
-          exact
-          path="/"
-          render={() => (
+        <Switch>
+        <Route exact path="/" render={() => (
             <nav>
-              <h1>EMERSON DA SILVA</h1>
+              <h1 class="artistName">EMERSON DA SILVA</h1>
               <ul>
                 <li>
                   <Link to="/terrestre">Terrestre</Link>
@@ -29,9 +27,11 @@ class App extends Component {
             </nav>
           )}
         />
-        <Route path="/terrestre" render={({ history }) => <Terrestre />} />
-        <Route path="/especies" render={({ history }) => <Especie />} />
-        <Route path="/contato" render={({ history }) => <Contato />} />
+        <Route path="/terrestre" component={Terrestre} />
+        <Route path="/especies" component={Especie} />
+        <Route path="/contato" component={Contato} />
+        <Route path="*" component={NotFound} />
+        </Switch>
       </div>
     );
   }
