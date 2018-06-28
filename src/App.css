@@ -1,28 +1,177 @@
-.App {
-  text-align: center;
+@media only screen and (max-width: 2560px) {
+nav, ul, section, .expoDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+a{
+  text-decoration: none;
+  color: #700c06;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+address {
+  font-style: normal;
+  font-size: 1.4em;
+  font-weight: bold;
+  position: absolute;
+  top: 45%;
+  left: 2%;
 }
 
-.App-title {
-  font-size: 1.5em;
+footer {
+  position: absolute;
+  bottom: 7%;
+  left: 2%;
 }
 
-.App-intro {
-  font-size: large;
+nav {
+  width: 20%;
+  position: absolute;
+  bottom: 25%;
+  left: 5%;
+  height: 500px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+ul {
+  list-style: none;
+  padding-left: 0
 }
+
+li {
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: normal;
+}
+
+#terrestreTitle {
+  width: 100%;
+  padding: 105px 0 65px 0;
+}
+
+.backButton {
+  width: 90%;
+  margin: auto;
+  padding: 60px 0 30px 0;
+}
+
+.backButton span {
+  font-size: 1.3em;
+}
+
+.galleries {
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.galleries img {
+  width: 100%;
+  margin: 10px;
+}
+
+.expoDescription {
+  width: 75%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.release {
+  color: #4D110D;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+}
+@media only screen and (max-width: 1360px) {
+  nav {
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .backButton span {
+    font-size: 1em;
+  }
+
+  .galleries {
+    width: 65%;
+  }
+
+  .expoDescription {
+    width: 65%;
+  }
+
+  .release {
+    font-size: 1.1em;
+  }
+}
+
+ @media only screen and (min-width: 320px) and (max-width: 768px){
+   nav {
+     width: 70%;
+     bottom: 20%;
+     left: 2%;
+     height: 400px;
+   }
+
+   address {
+     font-size: 0.9em;
+   }
+
+   h2 {
+     font-size: 1em;
+   }
+
+   .galleries {
+     width: 100%;
+   }
+
+   .expoDescription {
+     width: 98%;
+   }
+
+   .release {
+     font-size: 0.9em;
+   }
+
+   .galleries img {
+     width: 100%;
+     margin: 2px 0 2px 0;
+   }
+
+   .backButton {
+     margin-left:2px;
+     padding: 50px 0 10px 0;
+   }
+
+   .backButton span {
+     font-size: 0.7em;
+   }
+
+    footer {
+      font-size: 0.7em;
+    }
+ }
