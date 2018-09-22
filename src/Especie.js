@@ -26,7 +26,7 @@ class Especie extends Component {
     return (
       <div>
           <div id="terrestreTitle">
-            <h2>Espécies</h2>
+            <h2>Novas Espécies</h2>
           </div>
           <InfiniteScroll
             dataLength={this.state.pictures.length}
@@ -45,7 +45,7 @@ class Especie extends Component {
             )}
           </InfiniteScroll>
           <div className="expoDescription">
-            <a href="#" class="release">
+            <a href="http://palacio.xyz/exhibitions/novasespecies" target="_blank" class="release">
               release
             </a>
           </div>

@@ -44,7 +44,7 @@ class Terrestre extends Component {
             )}
           </InfiniteScroll>
           <div className="expoDescription">
-            <a href="#" class="release">
+            <a href="http://palacio.xyz/exhibitions/terrestre" target="_blank" class="release">
               release
             </a>
           </div>

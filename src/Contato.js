@@ -5,11 +5,11 @@ const Contato= () => {
 
   return <div>
   <address>
-    contato@emersondasilva.com
+    <a href="mailto:contato@emersondasilva.com">contato@emersondasilva.com</a>
   </address>
   <footer>
     <span>
-      <Link to="/">Voltar</Link>
+      <Link to="/">voltar</Link>
     </span>
   </footer>
 </div>

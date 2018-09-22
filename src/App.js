@@ -20,7 +20,7 @@ class App extends Component {
                   <Link to="/terrestre">Terrestre</Link>
                 </li>
                 <li>
-                  <Link to="/especies">Espécies</Link>
+                  <Link to="/especies">Novas Espécies</Link>
                 </li>
               </ul>
               <Link to="/contato">contato</Link>
